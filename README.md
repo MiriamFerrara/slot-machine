@@ -1,7 +1,7 @@
 # 🎰 Slot Machine React
 
 Una **slot machine interattiva** sviluppata in **React**, con animazioni realistiche, interfaccia moderna e modalità di gioco personalizzabili.  
-Gioca subito online 👉 [VAI AL GIOCO](https://miriamferrara.github.io/blackjack/)
+Gioca subito online 👉 [VAI AL GIOCO](https://miriamferrara.github.io/slot-machine/)
 
 ---
 
@@ -20,7 +20,7 @@ Gioca subito online 👉 [VAI AL GIOCO](https://miriamferrara.github.io/blackjac
 ## 🧪 Prova la demo online
 
 👉 Gioca direttamente dal browser:  
-[https://miriamferrara.github.io/blackjack/](https://miriamferrara.github.io/blackjack/)
+[https://miriamferrara.github.io/slot-machine/](https://miriamferrara.github.io/slot-machine/)
 
 ---
 
@@ -28,8 +28,9 @@ Gioca subito online 👉 [VAI AL GIOCO](https://miriamferrara.github.io/blackjac
 
 1. **Clona il repository**
    ```bash
-   git clone https://github.com/miriamferrara/blackjack.git
-   cd blackjack
+   git clone https://github.com/miriamferrara/slot-machine.git
+   cd slot-machine
+
    ```
 
 2. **Installa le dipendenze**
