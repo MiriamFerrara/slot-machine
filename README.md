@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# 🎰 Slot Machine React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Una **slot machine interattiva** sviluppata in **React**, con animazioni realistiche, interfaccia moderna e modalità di gioco personalizzabili.  
+Gioca subito online 👉 [VAI AL GIOCO](https://miriamferrara.github.io/blackjack/)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Caratteristiche principali
 
-### `npm start`
+- 💰 Imposta il saldo iniziale
+- 🎯 Scegli la modalità di gioco: **Vincente**, **Perdente** o **Casuale**
+- 🎞️ Rullo animato verticale con 3 simboli visibili
+- 🌌 Interfaccia in stile **dark blu** con effetto glow
+- 📱 Completamente **responsive** e ottimizzato per dispositivi mobili
+- 🕹️ Controlli intuitivi: **GIRA**, **RESET**, **RICOMINCIA**
+- 🔊 Feedback dinamico su vincite e perdite
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧪 Prova la demo online
 
-### `npm test`
+👉 Gioca direttamente dal browser:  
+[https://miriamferrara.github.io/blackjack/](https://miriamferrara.github.io/blackjack/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ⚙️ Come avviare il progetto in locale
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clona il repository**
+   ```bash
+   git clone https://github.com/miriamferrara/blackjack.git
+   cd blackjack
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Installa le dipendenze**
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Avvia l'app**
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+   L'app sarà disponibile all'indirizzo [http://localhost:3000](http://localhost:3000)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📁 Struttura del progetto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```plaintext
+📁 src/
+├── App.js         # Componente principale con logica di gioco
+├── App.css        # Stili personalizzati e animazioni (palette blu, effetto glow)
+├── index.js       # Punto di ingresso dell'app React
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 👩‍💻 Autrice
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Miriam Ferrara**  
+🔗 GitHub: [@miriamferrara](https://github.com/miriamferrara)
