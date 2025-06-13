@@ -607,53 +607,55 @@ body.body-game-bg {
 /* Stili per schermi più piccoli (tipicamente mobile) */
 @media (max-width: 768px) {
   .start-content {
-    padding: 15px; /* Riduci il padding sul mobile */
+    padding: 30px; /* Riduci il padding sul mobile */
   }
 
   .start-logo {
-    width: 80%; /* Aumenta la dimensione del logo sul mobile */
-    max-width: 300px; /* Limita la larghezza massima del logo */
+    width: 90%; /* Aumenta la dimensione del logo sul mobile */
+    max-width: 400px; /* Limita la larghezza massima del logo */
     margin-bottom: 20px; /* Modificato anche qui */
   }
 
   .start-message {
-    font-size: 28px; /* Riduci la dimensione del font per il messaggio */
-    margin-bottom: 15px;
+    font-size: 38px; /* Aumenta la dimensione del font per il messaggio */
+    margin-bottom: 25px; /* Aumenta lo spazio sotto il messaggio */
+    margin-top: -10px;
   }
 
   .glow-on-hover {
-    padding: 18px 60px; /* Riduci il padding del pulsante */
-    font-size: 24px; /* Riduci la dimensione del font del pulsante */
+    padding: 25px 80px; /* Aumenta il padding del pulsante */
+        font-size: 32px;/* Riduci la dimensione del font del pulsante */
   }
 }
 
 /* Stili per schermi molto piccoli (es. smartphone in verticale) */
 @media (max-width: 480px) {
   .start-content {
-    padding: 10px;
-    border-radius: 10px;
+    padding: 20px; /* Riduci leggermente il padding per schermi molto piccoli */
+    border-radius: 12px;
   }
 
   .start-logo {
-    width: 90%;
-    max-width: 250px;
-    margin-bottom: 20px; /* Modificato anche qui */
+    width: 95%; /* Ancora più grande su schermi molto piccoli */
+    max-width: 350px;
+    margin-bottom: 20px;
   }
 
   .start-message {
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 30px; /* Adatta il font per schermi molto piccoli */
+    margin-bottom: 20px;
+    margin-top: -10px;
   }
 
   .glow-on-hover {
-    padding: 15px 40px;
-    font-size: 20px;
-    border-radius: 10px;
+    padding: 20px 80px; /* Adatta il padding del pulsante */
+    font-size: 26px; /* Adatta il font del pulsante */
+    border-radius: 12px;
   }
 
   /* Riduci il filtro blur per schermi molto piccoli se necessario */
   .glow-on-hover:before {
-    filter: blur(3px);
+    filter: blur(4px); /* Puoi mantenerlo o ridurlo di più */
   }
 }
 
