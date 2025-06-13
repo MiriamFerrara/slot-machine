@@ -175,7 +175,7 @@ function App() {
 
   // Funzione per creare la cascata di monete
   const triggerCoinRainBody = () => {
-    for (let i = 0; i < 180; i++) {
+    for (let i = 0; i < 150; i++) {
       const coin = document.createElement('div');
       coin.className = 'coin-body';
 

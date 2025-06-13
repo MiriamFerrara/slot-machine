@@ -511,13 +511,10 @@ body.body-game-bg {
   align-items: center;
   text-align: center;
   padding: 20px;
-  /* Reintroduciamo lo sfondo nero semi-trasparente */
   background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 15px; /* Angoli arrotondati per il contenitore interno */
-  overflow: hidden; /* Nasconde l'eccesso del glow che sborda */
+  border-radius: 15px;
+  overflow: hidden;
 }
-
-
 
 /* L'animazione per il bordo glow (identica a quella del pulsante) */
 @keyframes glowing-border {
@@ -600,4 +597,70 @@ body.body-game-bg {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+
+/* --- Media Queries per la responsività --- */
+
+/* Stili per schermi più piccoli (tipicamente mobile) */
+@media (max-width: 768px) {
+  .start-content {
+    padding: 15px; /* Riduci il padding sul mobile */
+  }
+
+  .start-logo {
+    width: 80%; /* Aumenta la dimensione del logo sul mobile */
+    max-width: 300px; /* Limita la larghezza massima del logo */
+    margin-bottom: 10px; /* Aumenta leggermente il margine inferiore */
+  }
+
+  .start-message {
+    font-size: 28px; /* Riduci la dimensione del font per il messaggio */
+    margin-bottom: 15px;
+  }
+
+  .glow-on-hover {
+    padding: 18px 60px; /* Riduci il padding del pulsante */
+    font-size: 24px; /* Riduci la dimensione del font del pulsante */
+  }
+}
+
+/* Stili per schermi molto piccoli (es. smartphone in verticale) */
+@media (max-width: 480px) {
+  .start-content {
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .start-logo {
+    width: 90%;
+    max-width: 250px;
+  }
+
+  .start-message {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .glow-on-hover {
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
+  /* Riduci il filtro blur per schermi molto piccoli se necessario */
+  .glow-on-hover:before {
+    filter: blur(3px);
+  }
+}
+
+/* Stili opzionali per schermi molto grandi (desktop) */
+@media (min-width: 1200px) {
+  .start-message {
+    font-size: 60px; /* Aumenta la dimensione del font per schermi molto grandi */
+  }
+
+  .glow-on-hover {
+    padding: 35px 250px; /* Aumenta il padding del pulsante */
+    font-size: 45px;
+  }
 }
