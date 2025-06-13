@@ -287,7 +287,7 @@ body.body-game-bg {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .controls button {
@@ -413,7 +413,7 @@ body.body-game-bg {
   }
 
 .controls {
-  margin-top: 50px;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -491,18 +491,18 @@ body.body-game-bg {
     opacity: 0;
   }
 }
-
 /* Stili per la schermata iniziale semplificata (logo, testo, START) */
 .simple-start-screen {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   flex-direction: column;
   gap: 20px;
+    width: 100%; /* Occupa il 100% della larghezza disponibile, ma rispettando max-width */
+    max-width: 90vw; /* Larghezza massima come .slot-container */
+    min-width: 280px; /* Larghezza minima come .slot-container */
+    margin: 0 auto;
 }
 
 .start-content {
@@ -514,6 +514,7 @@ body.body-game-bg {
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 15px;
   overflow: hidden;
+     width: 100%;
 }
 
 /* L'animazione per il bordo glow (identica a quella del pulsante) */
@@ -526,8 +527,8 @@ body.body-game-bg {
 /* Il resto del tuo CSS (logo, messaggio, pulsante) non è stato modificato in questo blocco */
 .start-logo {
   width: 60%;
-  max-width: 400px;
-  margin-bottom: 5px;
+  max-width: 350px;
+  margin-bottom: 20px; /* Modificato da 5px a 0px per ridurre lo spazio */
 }
 
 .start-message {
@@ -535,11 +536,13 @@ body.body-game-bg {
   font-size: 50px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
   margin-bottom: 20px;
+  /* Aggiunta la modifica qui per ridurre lo spazio tra il logo e l'h1 */
+  margin-top: -20px;
 }
 
 /* Stile combinato per il pulsante START con effetto GLOW */
 .glow-on-hover {
-    padding: 30px 200px;
+    padding: 20px 150px;
     font-size: 40px;
     font-weight: bold;
     margin: 4px 2px;
@@ -610,7 +613,7 @@ body.body-game-bg {
   .start-logo {
     width: 80%; /* Aumenta la dimensione del logo sul mobile */
     max-width: 300px; /* Limita la larghezza massima del logo */
-    margin-bottom: 10px; /* Aumenta leggermente il margine inferiore */
+    margin-bottom: 20px; /* Modificato anche qui */
   }
 
   .start-message {
@@ -634,6 +637,7 @@ body.body-game-bg {
   .start-logo {
     width: 90%;
     max-width: 250px;
+    margin-bottom: 20px; /* Modificato anche qui */
   }
 
   .start-message {
@@ -657,10 +661,12 @@ body.body-game-bg {
 @media (min-width: 1200px) {
   .start-message {
     font-size: 60px; /* Aumenta la dimensione del font per schermi molto grandi */
+    /* Aggiunta la modifica qui per schermi molto grandi */
+    margin-top: -30px; /* Potrebbe essere necessario un valore più negativo qui */
   }
 
   .glow-on-hover {
-    padding: 35px 250px; /* Aumenta il padding del pulsante */
-    font-size: 45px;
+    padding: 20px 250px; /* Aumenta il padding del pulsante */
+    font-size: 40px;
   }
 }
